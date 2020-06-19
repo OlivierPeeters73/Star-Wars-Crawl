@@ -1,0 +1,63 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(images/stars_S.jpg);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase ;
+}
+
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    perspective: 400px;
+    color: #fdfe02;
+    font-family: galaxy;
+    font-size: 400%;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.slidein {
+    position: relative;
+    top: 6000px;
+    transform-origin: 50% 100%;
+    animation: slidein 60s linear;
+}
+
+.becode {
+    display: block;
+    margin: auto;
+}
+
+@keyframes slidein {
+    0% {
+        top: 0;
+        transform: rotateX(20deg) translate(0);
+    }
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url(font/BebasNeue-Regular.otf);
+}
