@@ -34,12 +34,7 @@ h1 {
     text-align: justify;
 }
 
-.slidein {
-    position: relative;
-    top: 6000px;
-    transform-origin: 50% 100%;
-    animation: slidein 60s linear;
-}
+.slidein {git commit -am "seems ok"
 
 .becode {
     display: block;
@@ -49,7 +44,7 @@ h1 {
 @keyframes slidein {
     0% {
         top: 0;
-        transform: rotateX(20deg) translate(0);
+        transform: rotateX(20deg) translateZ(0);
     }
     100% {
         top: -6000px;
