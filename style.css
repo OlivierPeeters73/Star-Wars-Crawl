@@ -34,7 +34,12 @@ h1 {
     text-align: justify;
 }
 
-.slidein {git commit -am "seems ok"
+.slidein {
+    position: relative;
+    top: 6000px;
+    transform-origin: 50% 100%;
+    animation: slidein 60s linear;
+}
 
 .becode {
     display: block;
